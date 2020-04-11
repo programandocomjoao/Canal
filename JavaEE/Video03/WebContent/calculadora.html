@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Calculadora Básica</title>
+	</head>
+
+	<body>
+		<h1>Calculadora Básica</h1>
+		
+		<form action="calculadora.jsp" method="post">
+			<fieldset>
+				<legend>Dados para calcular</legend>
+				
+				<p><label for="valor1">Valor 1</label>
+				<input type="text" id="valor1" name="valor1" size="10"></p>
+				
+				<p><label for="valor2">Valor 2</label>
+				<input type="text" id="valor2" name="valor2" size="10"></p>
+				
+				<fieldset>
+					<legend>Operações:</legend>
+					
+					<input type="radio" id="adicao" name="operacao" value="1">
+					<label for="adicao">Adição</label>
+					<input type="radio" id="subtracao" name="operacao" value="2">
+					<label for="subtracao">Subtração</label>
+					<input type="radio" id="multiplicacao" name="operacao" value="3">
+					<label for="multiplicacao">Multiplicação</label>
+					<input type="radio" id="divisao" name="operacao" value="4">
+					<label for="divisao">Divisão</label>
+				</fieldset>		
+				
+				<p><input type="submit" value="Calcular"></p>
+			</fieldset>
+		</form>
+	</body>
+</html>
