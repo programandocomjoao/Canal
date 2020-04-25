@@ -1,1 +1,34 @@
-
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Cadastro de Sessões de Cinema</title>
+	</head>
+	
+	<body>
+		<h1>Cadastro de Sessões de Cinema</h1>
+		
+		<form action="SalvarSessao" method="post">
+			<fieldset>
+				<legend>Dados da Sessão</legend>
+				
+				<p><label for="filme">Título do Filme:</label>
+				<input type="text" id="filme" name="filme" size="40"></p>
+				
+				<p><label for="data">Data da Sessão:</label>
+				<input type="date" id="data" name="data"></p>
+				
+				<p><label for="inicio">Hora de Início:</label>
+				<input type="time" id="inicio" name="inicio"></p>
+				
+				<p><label for="termino">Hora de Término:</label>
+				<input type="time" id="termino" name="termino"></p>
+				
+				<p><label for="sala">Sala da Sessão:</label>
+				<input type="number" id="sala" name="sala" min="1" max="5"></p>
+				
+				<p><input type="submit" value="Cadastrar Sessão"></p>
+			</fieldset>
+		</form>
+	</body>
+</html>
